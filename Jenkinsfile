@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/sujithchandran1/Boutique_App.git'
+                git branch: 'main', url: 'https://github.com/jakkalilokesh/Boutique_App.git'
             }
         }
 

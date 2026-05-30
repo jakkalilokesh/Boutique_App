@@ -104,8 +104,7 @@ resource "aws_eks_node_group" "demo_nodes" {
     min_size     = 1
   }
 
-  # CHANGED: Swapped t3.medium out to comply with your account's Free Tier constraint
-  instance_types = ["t3.micro"]
+  instance_types = ["m7i-flex.large"]
 
   tags = {
     Name = "${var.cluster_name}-node-group"
